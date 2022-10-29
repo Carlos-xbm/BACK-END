@@ -1,6 +1,6 @@
 const route = require("express").Router();
 const paletasController = require("../controllers/paletas");
-const { validId, validObjectBody } = require("../middleware/paleta");
+const { validId, validObjectBody } = require("../../middleware/paleta");
 
 route.get("/", function (req, res) {
     res.send("Olá XBM");
