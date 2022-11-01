@@ -8,7 +8,6 @@ const app = express();
 const paletaRoute = require("./src/paletas/routes/paletas");
 const userRoute = require("./src/users/routes/users");
 const authRoute = require("./src/auth/route");
-const carrinhoRoute = require("./src/paletas/carrinho/routes/carrinho");
 
 connectToDatabase();
 
@@ -18,7 +17,6 @@ app.use(express.json());
 app.use("/auth", authRoute);
 app.use("/users", userRoute);
 app.use("/paletas", paletaRoute);
-app.use("/carrinho", carrinhoRoute,);
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em ${PORT}`);
