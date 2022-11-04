@@ -26,6 +26,8 @@ route.put(
 );
 
 route.delete("/delete-paleta/:id", validId, paletasController.deletePaletaController);
+
+
 /* CARRINHO */
 route.get("/all-carrinho", controllerCarrinho.allCarrinhoController);
 

@@ -10,7 +10,7 @@ const allCarrinhoController = async (req, res) => {
 
 const createCarrinhoController = async (req, res) => {
     const carrinho = req.body;
-    const newCarrinho = await carrinnhoService.createCarrinhoService(carrinho);
+    const newCarrinho = await carrinhoService.createCarrinhoService(carrinho);
     res.status(201).send(newCarrinho);
 };
 
